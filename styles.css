@@ -646,13 +646,36 @@ nav a {
 
 .paso-imagen {
     flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .paso-imagen img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border: 1px solid #eee;
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .paso-imagen {
+        max-width: 100%;
+        padding: 5px;
+    }
+    
+    .paso-imagen img {
+        max-height: 300px;
+    }
 }
 
 .paso-texto {
