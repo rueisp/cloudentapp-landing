@@ -853,3 +853,148 @@ nav a {
         font-size: 1.2rem;
     }
 }
+
+/* ===== AVISO LEGAL ===== */
+.aviso-legal {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.recuadro-importante {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.recuadro-importante h4 {
+    color: #856404;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recuadro-importante p {
+    color: #856404;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.recuadro-importante p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== SECCIÓN DE PRECIOS ===== */
+.precios {
+    padding: 80px 0;
+    background: white;
+}
+
+.precios h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.precio-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #eee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.precio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.precio-valor {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.precio-valor span {
+    font-size: 1rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.precio-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.precio-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio-card li:last-child {
+    border-bottom: none;
+}
+
+.precio-card li strong {
+    color: #2c3e50;
+}
+
+.precio-card .btn-primario {
+    margin: 20px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.precio-card .nota {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .precios h3 {
+        font-size: 1.8rem;
+    }
+    
+    .precio-card {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    
+    .precio-valor {
+        font-size: 2.8rem;
+    }
+    
+    .recuadro-importante {
+        margin: 0 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .precio-valor {
+        font-size: 2.2rem;
+    }
+    
+    .precio-card li {
+        font-size: 0.9rem;
+    }
+}
