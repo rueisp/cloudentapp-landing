@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* ===== RESET Y ESTILOS BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -17,358 +17,7 @@ body {
     padding: 0 20px;
 }
 
-/* Cabecera */
-header {
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.logo h1 {
-    font-size: 24px;
-    color: #2c3e50;
-}
-
-.logo span {
-    color: #3498db;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #3498db;
-}
-
-.btn-acceder {
-    background: #3498db;
-    color: white !important;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
-
-/* Hero section */
-.hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primario {
-    display: inline-block;
-    background: white;
-    color: #764ba2;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: transform 0.3s;
-}
-
-.btn-primario:hover {
-    transform: scale(1.05);
-}
-
-/* Características */
-.caracteristicas {
-    padding: 80px 20px;
-    background: #f8f9fa;
-}
-
-.caracteristicas h3 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #2c3e50;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-/* Aviso legal */
-.aviso-legal {
-    padding: 40px 20px;
-}
-
-.recuadro-importante {
-    background: #fff3cd;
-    border: 2px solid #ffeeba;
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.recuadro-importante h4 {
-    color: #856404;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-/* Precios */
-.precios {
-    padding: 80px 20px;
-    background: #f8f9fa;
-}
-
-.precios h3 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #2c3e50;
-}
-
-.precio-card {
-    max-width: 400px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 10px;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.precio-valor {
-    font-size: 48px;
-    color: #2c3e50;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.precio-valor span {
-    font-size: 18px;
-    font-weight: normal;
-    color: #777;
-}
-
-.precio-card ul {
-    list-style: none;
-    margin: 30px 0;
-    text-align: left;
-}
-
-.precio-card li {
-    margin: 15px 0;
-    font-size: 16px;
-}
-
-.nota {
-    color: #777;
-    font-size: 14px;
-    margin-top: 20px;
-}
-
-/* FAQ */
-.faq {
-    padding: 80px 20px;
-}
-
-.faq h3 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #2c3e50;
-}
-
-.faq-item {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.faq-item h4 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-footer a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-                    <!-- Paso 1 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/inicio.PNG" alt="Pantalla de inicio">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">1</span>
-                            <h4>Inicia sesión</h4>
-                            <p>Accede a tu consultorio desde cualquier dispositivo. Interfaz limpia y profesional.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 2 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/Lista%20de%20pacientes.PNG" alt="Lista de pacientes">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">2</span>
-                            <h4>Encuentra a tus pacientes</h4>
-                            <p>Búsqueda por letras iniciales. Todo tu panel de pacientes al instante.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 3 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/Ficha%20del%20paciente.PNG" alt="Ficha del paciente">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">3</span>
-                            <h4>Consulta la ficha completa</h4>
-                            <p>Datos básicos, alergias, historia. Todo lo que necesitas saber.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 4 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/odontograma.PNG" alt="Odontograma">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">4</span>
-                            <h4>Odontograma interactivo</h4>
-                            <p>Numeración FDI. Haz clic y registra hallazgos en segundos.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 5 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/Evoluci%C3%B3n%20por%20voz.PNG" alt="Evolución por voz">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">5</span>
-                            <h4>Evolución por voz</h4>
-                            <p>Dicta al salir de consulta y se transcribe automáticamente. Ahorra tiempo.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 6 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/Agenda%20de%20citas.PNG" alt="Agenda de citas">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">6</span>
-                            <h4>Gestiona tu agenda</h4>
-                            <p>Calendario integrado. Ve tus citas del día y programa nuevas.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Paso 7 -->
-                    <div class="paso">
-                        <div class="paso-imagen">
-                            <img src="https://raw.githubusercontent.com/rueisp/cloudentapp-landing/main/Exportar.PNG" alt="Exportar datos">
-                        </div>
-                        <div class="paso-texto">
-                            <span class="paso-numero">7</span>
-                            <h4>Exporta a Excel/Word</h4>
-                            <p>Tus respaldos en formatos estándar. Siempre tienes control de tu información.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-/* Estilos para Términos y Aviso de Privacidad */
-.terminos, #aviso-privacidad {
-    padding: 60px 20px;
-    background: #f8f9fa;
-}
-
-.terminos h3, #aviso-privacidad h3 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.terminos h4, #aviso-privacidad h4 {
-    color: #2c3e50;
-    margin: 30px 0 15px;
-    font-size: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-}
-
-.terminos p, #aviso-privacidad p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.terminos ul, #aviso-privacidad ul {
-    margin-bottom: 20px;
-    padding-left: 30px;
-}
-
-.terminos li, #aviso-privacidad li {
-    margin-bottom: 8px;
-}
-
-/* Header y navegación */
+/* ===== HEADER Y NAVEGACIÓN ===== */
 header {
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -388,6 +37,7 @@ header .container {
 .logo h1 {
     font-size: 1.5rem;
     margin: 0;
+    color: #2c3e50;
 }
 
 .logo span {
@@ -409,6 +59,10 @@ nav a {
     font-weight: 500;
 }
 
+nav a:hover {
+    color: #27ae60;
+}
+
 .btn-acceder {
     background: #27ae60;
     color: white !important;
@@ -421,7 +75,7 @@ nav a {
     background: #219a52;
 }
 
-/* Botón menú hamburguesa (oculto en desktop) */
+/* Botón menú hamburguesa */
 .menu-toggle {
     display: none;
     background: none;
@@ -439,34 +93,7 @@ nav a {
     transition: 0.3s;
 }
 
-/* Estilos móvil */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    
-    nav {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: white;
-        transition: left 0.3s;
-        padding: 2rem;
-    }
-    
-    nav.active {
-        left: 0;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-
-/* Hero Section */
+/* ===== HERO SECTION ===== */
 .hero {
     padding: 120px 0 80px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -509,7 +136,7 @@ nav a {
     transform: translateY(-2px);
 }
 
-/* Características Section */
+/* ===== CARACTERÍSTICAS ===== */
 .caracteristicas {
     padding: 80px 0;
     background: white;
@@ -535,7 +162,7 @@ nav a {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
     text-align: center;
 }
 
@@ -555,31 +182,94 @@ nav a {
     line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-    
-    .btn-primario {
-        padding: 12px 30px;
-        font-size: 1rem;
-    }
-    
-    .caracteristicas h3 {
-        font-size: 1.8rem;
-    }
+/* ===== CÓMO FUNCIONA ===== */
+.como-funciona {
+    padding: 80px 0;
+    background: #f8f9fa;
 }
 
-/* ===== ACLARACIÓN DE LÍMITES ===== */
-.aclaracion {
-    margin: 20px 0;
+.como-funciona h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
+.como-funciona .subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.pasos {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.paso:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.paso-imagen {
+    flex: 1;
+    max-width: 50%;
+}
+
+.paso-imagen img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.paso-texto {
+    flex: 1;
+    position: relative;
+}
+
+.paso-numero {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background: #27ae60;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(39,174,96,0.3);
+}
+
+.paso-texto h4 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.paso-texto p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===== ACLARACIÓN ===== */
 .aclaracion p {
     text-align: center;
     color: #666;
@@ -588,12 +278,11 @@ nav a {
     padding: 10px;
     border-radius: 50px;
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px auto;
     left: 50%;
     position: relative;
     transform: translateX(-50%);
 }
-
 
 /* ===== AVISO LEGAL ===== */
 .aviso-legal {
@@ -608,29 +297,20 @@ nav a {
     border-left: 5px solid #ffc107;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .recuadro-importante h4 {
     color: #856404;
     font-size: 1.3rem;
     margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .recuadro-importante p {
     color: #856404;
     line-height: 1.6;
-    margin-bottom: 10px;
 }
 
-.recuadro-importante p:last-child {
-    margin-bottom: 0;
-}
-
-/* ===== SECCIÓN DE PRECIOS ===== */
+/* ===== PRECIOS ===== */
 .precios {
     padding: 80px 0;
     background: white;
@@ -652,7 +332,7 @@ nav a {
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
     text-align: center;
     border: 1px solid #eee;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
 .precio-card:hover {
@@ -689,55 +369,10 @@ nav a {
     gap: 10px;
 }
 
-.precio-card li:last-child {
-    border-bottom: none;
-}
-
-.precio-card li strong {
-    color: #2c3e50;
-}
-
-.precio-card .btn-primario {
-    margin: 20px 0 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .precio-card .nota {
     color: #999;
     font-size: 0.9rem;
     margin-top: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .precios h3 {
-        font-size: 1.8rem;
-    }
-    
-    .precio-card {
-        padding: 30px 20px;
-        margin: 0 20px;
-    }
-    
-    .precio-valor {
-        font-size: 2.8rem;
-    }
-    
-    .recuadro-importante {
-        margin: 0 20px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .precio-valor {
-        font-size: 2.2rem;
-    }
-    
-    .precio-card li {
-        font-size: 0.9rem;
-    }
 }
 
 /* ===== BOTÓN PDF ===== */
@@ -756,8 +391,7 @@ nav a {
     font-weight: bold;
     font-size: 1.2rem;
     box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    border: 2px solid transparent;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn-pdf:hover {
@@ -766,22 +400,10 @@ nav a {
     box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
 }
 
-.btn-pdf:active {
-    transform: translateY(-1px);
-}
-
-.btn-pdf i {
-    margin-right: 10px;
-    font-style: normal;
-}
-
 .btn-pdf-sub {
     margin-top: 15px;
     color: #666;
     font-size: 1rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ===== FAQ ===== */
@@ -804,35 +426,18 @@ nav a {
     border-radius: 10px;
     padding: 25px 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
     border-left: 4px solid #27ae60;
-}
-
-.faq-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .faq-item h4 {
     font-size: 1.2rem;
     color: #2c3e50;
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.faq-item h4::before {
-    content: "❓";
-    font-size: 1.2rem;
-    color: #27ae60;
 }
 
 .faq-item p {
     color: #666;
     line-height: 1.6;
-    margin: 0;
-    padding-left: 28px;
 }
 
 /* ===== FOOTER ===== */
@@ -857,11 +462,75 @@ footer a {
 
 footer a:hover {
     color: #27ae60;
-    text-decoration: underline;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        transition: left 0.3s;
+        padding: 2rem;
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn-primario {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .paso {
+        flex-direction: column !important;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .paso-imagen {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .paso-numero {
+        top: -20px;
+        left: -20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .precios h3 {
+        font-size: 1.8rem;
+    }
+    
+    .precio-card {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    
     .faq h3 {
         font-size: 1.8rem;
     }
@@ -870,36 +539,18 @@ footer a:hover {
         margin: 0 20px 20px;
         padding: 20px;
     }
-    
-    .faq-item h4 {
-        font-size: 1.1rem;
-    }
-    
-    .btn-pdf {
-        padding: 15px 30px;
-        font-size: 1rem;
-    }
-    
-    footer p {
-        font-size: 0.9rem;
-    }
-    
-    footer a {
-        display: inline-block;
-        margin: 5px 10px;
-    }
 }
 
 @media (max-width: 480px) {
-    .faq-item {
-        padding: 15px;
+    .precio-valor {
+        font-size: 2.2rem;
     }
     
-    .faq-item p {
-        font-size: 0.9rem;
-    }
-    
-    footer p:first-child {
-        font-size: 0.8rem;
+    .paso-numero {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        top: -15px;
+        left: -15px;
     }
 }
