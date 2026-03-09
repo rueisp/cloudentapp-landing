@@ -584,3 +584,131 @@ nav a {
         font-size: 1.8rem;
     }
 }
+
+/* ===== ACLARACIÓN DE LÍMITES ===== */
+.aclaracion {
+    margin: 20px 0;
+}
+
+.aclaracion p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+/* ===== CÓMO FUNCIONA ===== */
+.como-funciona {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.como-funciona h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.como-funciona .subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.pasos {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.paso:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.paso-imagen {
+    flex: 1;
+}
+
+.paso-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.paso-texto {
+    flex: 1;
+    position: relative;
+}
+
+.paso-numero {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background: #27ae60;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(39,174,96,0.3);
+}
+
+.paso-texto h4 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.paso-texto p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .paso {
+        flex-direction: column !important;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .paso-numero {
+        top: -20px;
+        left: -20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .paso-texto h4 {
+        font-size: 1.3rem;
+    }
+    
+    .como-funciona h3 {
+        font-size: 1.8rem;
+    }
+}
