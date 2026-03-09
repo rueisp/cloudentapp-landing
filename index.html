@@ -12,6 +12,11 @@
         <div class="container">
             <div class="logo">
                 <h1>Cloudent<span>App</span></h1>
+                <button class="menu-toggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
             <nav>
                 <ul>
@@ -19,7 +24,7 @@
                     <li><a href="#caracteristicas">Características</a></li>
                     <li><a href="#precios">Precios</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="https://tu-app-1073612768567.us-central1.run.app" class="btn-acceder">Acceder</a></li>
+                    <li><a href="https://clinica-test-1073612768567.us-central1.run.app" class="btn-acceder">Acceder</a></li>
                 </ul>
             </nav>
         </div>
@@ -237,5 +242,11 @@
             </p>
         </div>
     </footer>
+
+    <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+</script>
 </body>
 </html>
