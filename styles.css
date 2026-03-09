@@ -647,28 +647,22 @@ nav a {
 .paso-imagen {
     flex: 1;
     max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .paso-imagen img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .paso-imagen {
         max-width: 100%;
+        width: 100%;
     }
 }
-
 .paso-texto {
     flex: 1;
     position: relative;
